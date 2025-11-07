@@ -1,4 +1,4 @@
-# 🤖 AI Analytics Service
+# 🤖 AI Analytics 
 
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688.svg)](https://fastapi.tiangolo.com)
@@ -8,7 +8,7 @@ Serviço de classificação semântica de eventos JSON usando FastAPI e sentence
 
 ## 🎯 Visão Geral
 
-O AI Analytics Service é uma API REST que utiliza inteligência artificial para classificar eventos JSON em etapas de processos de negócio através de análise semântica. O serviço usa modelos de linguagem natural (NLP) para entender o contexto dos eventos e determinar a etapa mais adequada no fluxo de trabalho.
+O AI Analytics é uma API REST que utiliza inteligência artificial para classificar eventos JSON em etapas de processos de negócio através de análise semântica. O serviço usa modelos de linguagem natural (NLP) para entender o contexto dos eventos e determinar a etapa mais adequada no fluxo de trabalho.
 
 ### 🚀 Principais Funcionalidades
 
@@ -52,10 +52,10 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 
 ```bash
 # Construir imagem
-docker build -t ai-analytics-service .
+docker build -t ai-analytics-.
 
 # Executar container
-docker run -p 8000:8000 ai-analytics-service
+docker run -p 8000:8000 ai-analytics-
 ```
 
 ## 🧪 Testes
@@ -368,7 +368,7 @@ Se os problemas persistirem:
 ### 📁 Estrutura do Projeto
 
 ```
-ai-analytics-service/
+ai-analytics-/
 ├── 📄 main.py              # Aplicação principal FastAPI
 ├── 📋 requirements.txt     # Dependências Python
 ├── 🐳 Dockerfile          # Configuração Docker
@@ -434,7 +434,7 @@ graph TD
 
 ```bash
 # Build da imagem
-docker build -t ai-analytics-service:latest .
+docker build -t ai-analytics-:latest .
 
 # Execução local
 docker run -d \
@@ -442,12 +442,12 @@ docker run -d \
   -p 8000:8000 \
   -e MAX_CACHE_SIZE=2000 \
   -e OMP_NUM_THREADS=4 \
-  ai-analytics-service:latest
+  ai-analytics-:latest
 
 # Com docker-compose
 cat > docker-compose.yml << EOF
 version: '3.8'
-services:
+s:
   ai-analytics:
     build: .
     ports:
@@ -474,7 +474,7 @@ docker-compose up -d
 ```bash
 # Criar task definition
 aws ecs register-task-definition \
-  --family ai-analytics-service \
+  --family ai-analytics-\
   --requires-compatibilities FARGATE \
   --network-mode awsvpc \
   --cpu 2048 \
@@ -485,7 +485,7 @@ aws ecs register-task-definition \
 
 ```bash
 # Deploy direto do código
-gcloud run deploy ai-analytics-service \
+gcloud run deploy ai-analytics-\
   --source . \
   --platform managed \
   --region us-central1 \
@@ -498,8 +498,8 @@ gcloud run deploy ai-analytics-service \
 ```bash
 az container create \
   --resource-group myResourceGroup \
-  --name ai-analytics-service \
-  --image ai-analytics-service:latest \
+  --name ai-analytics-\
+  --image ai-analytics-:latest \
   --cpu 2 \
   --memory 4 \
   --ports 8000
@@ -593,8 +593,8 @@ async def classify_event(request: Request, data: EventInput):
 
 ```bash
 # 1. Clone e setup
-git clone https://github.com/DiegoCiara/ai-analytics-service.git
-cd ai-analytics-service
+git clone https://github.com/DiegoCiara/ai-analytics-.git
+cd ai-analytics-
 ./setup_and_run.sh
 
 # 2. Criar branch para feature
