@@ -1,4 +1,4 @@
-# 🤖 AI Analytics 
+# 🤖 AI Actions 
 
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115.0-009688.svg)](https://fastapi.tiangolo.com)
@@ -8,7 +8,7 @@ Serviço de classificação semântica de eventos JSON usando FastAPI e sentence
 
 ## 🎯 Visão Geral
 
-O AI Analytics é uma API REST que utiliza inteligência artificial para classificar eventos JSON em etapas de processos de negócio através de análise semântica. O serviço usa modelos de linguagem natural (NLP) para entender o contexto dos eventos e determinar a etapa mais adequada no fluxo de trabalho.
+O AI Actions é uma API REST que utiliza inteligência artificial para classificar eventos JSON em etapas de processos de negócio através de análise semântica. O serviço usa modelos de linguagem natural (NLP) para entender o contexto dos eventos e determinar a etapa mais adequada no fluxo de trabalho.
 
 ### 🚀 Principais Funcionalidades
 
